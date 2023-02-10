@@ -1,3 +1,13 @@
+
+
+/*
+This assignment was done in group with Sri Hari Sreenivasan(A00272180)
+ and myself Jobin Koodathinkal Jose(A00250653)
+My contribution in this assignment was coding the ceaser cipher, userInput(), arrayContains()
+And also I debugged and solved errors in the functions and tester functions.
+We both worked together in developing logic for each function and Coded two functions each
+ */
+
 fun main() {
     //Ceaser Cipher function
     userInput()
@@ -36,6 +46,12 @@ fun main() {
     }
     print("]")
     println()
+    
+    // CALLING THE TESTER FUNCTIONS
+    cipherTester()
+    arrayAvgTester()
+    arrayContainsTester()
+    reverseArrayTester()
     
 }
 //encrypt string function
