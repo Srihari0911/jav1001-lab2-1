@@ -13,12 +13,14 @@ fun main() {
     userInput()
     
     //Array average function
+    println("-------------------------------")
     val numbers = intArrayOf(10,10,10)
     println(arrayAvg(numbers))
     
     //Array contains function
+    println("-------------------------------")
     val array = intArrayOf(1,3,4,60,34,5,0)
-    print("Enter value to check in the array : ")
+    print("Enter value to check in the array : ")// taking user input for the value to be searched
     val searchValue = readln().toInt()
 
     val result = arrayContains(array,searchValue)
@@ -29,7 +31,8 @@ fun main() {
         println("$searchValue does not exist in the array.")
     }
     
-      //Reverse an array function starts here
+    //Reverse an array function starts here
+    println("-------------------------------")
     val arrayToReverse = intArrayOf(1,2,3,4,5,6,7,8,9)
     print("Array before reversing : [")
     for (i in arrayToReverse.indices){
@@ -48,9 +51,17 @@ fun main() {
     println()
     
     // CALLING THE TESTER FUNCTIONS
+    println("-------------------------------")
+    println("Ceaser cipher tests")
     cipherTester()
+    println("-------------------------------")
+    println("Array average tests")
     arrayAvgTester()
+    println("-------------------------------")
+    println("Array contains tests")
     arrayContainsTester()
+    println("-------------------------------")
+    println("Reverse array tests")
     reverseArrayTester()
     
 }
@@ -98,7 +109,7 @@ fun userInput() {
         }
     }
 }
-// Array average function
+// Array average function to get the average of an array
 fun arrayAvg(array: IntArray): Int {
     var sum = 0
     for (i in array) {
@@ -124,6 +135,7 @@ fun reverseArray(array: IntArray): IntArray {
     }
     return reversedArray
 }
+
 // FROM HERE START THE TESTER FUNCTIONS!
 fun cipherTester(){
     // for the cipher tester we put the shift value to be 3
